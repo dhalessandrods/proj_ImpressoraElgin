@@ -63,20 +63,20 @@ Você literalmente só digita o número e o texto quando solicitado. Fim.
 
 ## ⚙️ Funcionalidades já implementadas e testadas
 
-| Opção | Função                        | O que acontece                                                            |
-|-------|-------------------------------|---------------------------------------------------------------------------|
-| 1     | Configurar Conexão            | Usuário digita os parâmetros para configurar conexão com a impressora     |
-| 2     | Abrir Conexão                 | Sistema se conecta com a impressora e permite realizar funções            |
-| 3     | Imprimir Texto                | Digita o que quiser → imprime centralizado, negrito, fonte normal         |
-| 4     | Imprimir QR Code              | Digita URL/texto → gera QR Code tamanho 6, correção alta                  |
-| 5     | Imprimir Código de Barras     | Code128 com texto padrão ou padrão {A012345678912}, mostra acima e abaixo |
-| 6     | Imprimir XML SAT              | Imprime cupom SAT do arquivo XMLSAT.xml (já incluso para teste)           |
-| 7     | Imprimir XML Cancelamento SAT | Imprime cancelamento com assinatura já preenchida                         |
-| 8     | Abrir Gaveta Elgin            | Abre gaveta no pino Elgin (mais confiável)                                |
-| 9     | Abrir Gaveta padrão           | Abre gaveta genérica                                                      |
-| 10    | Emitir Beep                   | 4 beeps rápidos – perfeito para chamar atenção                            |
-| 11    | Obter Versão DLL              | Obtém versão do arquivo DLL instalado                                     |
-| 0     | Fechar Conexão                | Fecha conexão com impressora e encerra o sistema                          |
+| Opção | Função                        | O que acontece                                                                |
+|-------|-------------------------------|-------------------------------------------------------------------------------|
+| 1     | Configurar Conexão            | Usuário digita os parâmetros para configurar conexão com a impressora         |
+| 2     | Abrir Conexão                 | Sistema se conecta com a impressora e permite realizar funções                |
+| 3     | Imprimir Texto                | Digita o que quiser → imprime centralizado, negrito, fonte normal             |
+| 4     | Imprimir QR Code              | Digita URL/texto → gera QR Code tamanho 6, correção alta                      |
+| 5     | Imprimir Código de Barras     | Code128 com texto do usuário ou padrão {A012345678912}, mostra acima e abaixo |
+| 6     | Imprimir XML SAT              | Imprime cupom SAT do arquivo XMLSAT.xml (já incluso para teste)               |
+| 7     | Imprimir XML Cancelamento SAT | Imprime cancelamento com assinatura já preenchida                             |
+| 8     | Abrir Gaveta Elgin            | Abre gaveta no pino Elgin (mais confiável)                                    |
+| 9     | Abrir Gaveta padrão           | Abre ga****veta genérica                                                          |
+| 10    | Emitir Beep                   | 4 beeps rápidos – perfeito para chamar atenção                                |
+| 11    | Obter Versão DLL              | Obtém versão do arquivo DLL instalado                                         |
+| 0     | Fechar Conexão                | Fecha conexão com impressora e encerra o sistema                              |
 
 ## 🐰 Problemas que eu enfrentei (pra você não sofrer)
 
