@@ -73,7 +73,7 @@ Você literalmente só digita o número e o texto quando solicitado. Fim.
 | 6     | Imprimir XML SAT              | Imprime cupom SAT do arquivo XMLSAT.xml (já incluso para teste)               |
 | 7     | Imprimir XML Cancelamento SAT | Imprime cancelamento com assinatura já preenchida                             |
 | 8     | Abrir Gaveta Elgin            | Abre gaveta no pino Elgin (mais confiável)                                    |
-| 9     | Abrir Gaveta padrão           | Abre ga****veta genérica                                                          |
+| 9     | Abrir Gaveta padrão           | Abre gaveta genérica                                                          |
 | 10    | Emitir Beep                   | 4 beeps rápidos – perfeito para chamar atenção                                |
 | 11    | Obter Versão DLL              | Obtém versão do arquivo DLL instalado                                         |
 | 0     | Fechar Conexão                | Fecha conexão com impressora e encerra o sistema                              |
