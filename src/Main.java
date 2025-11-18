@@ -22,7 +22,7 @@ public class Main {
     //Declaro e crio INTERFACE ImpressoraDLL
     public interface ImpressoraDLL extends Library {
         ImpressoraDLL INSTANCE = Native.load(
-                "C:\\workspace\\ws-intelliJ\\proj_impressoraElgin\\E1_Impressora01.dll",
+                "C:\\workspace\\ws-intelliJ\\pj_ImpressoraElgin\\E1_Impressora01.dll",
                 ImpressoraDLL.class);
 
         // FUNÇÕES DA IMPRESSORA (na DLL)
