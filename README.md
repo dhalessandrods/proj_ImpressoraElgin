@@ -15,6 +15,7 @@ O foco é ser **rápido de aprender**, mesmo para quem nunca programou na vida. 
 ## 🛠️ Tecnologias utilizadas
 - **Java 8+** (100% puro, sem frameworks)
 - **JNA** (Java Native Access) – para carregar e usar a DLL da Elgin
+- **Documentação Elgin**: Utilizado como auxílio para desenvolver o programa (https://elgindevelopercommunity.github.io/group___m1.html) 
 
 ## 📦 Dependências necessárias
 - **JNA** → `jna-5.13.0.jar` + `jna-platform-5.13.0.jar` (já incluídos no repositório ou baixe em https://github.com/java-native-access/jna)
@@ -24,7 +25,7 @@ O foco é ser **rápido de aprender**, mesmo para quem nunca programou na vida. 
 
 1. Baixe ou clone este repositório
 2. Abra o IntelliJ (ou Eclipse, NetBeans, VS Code com Java, o que preferir)
-3. Importe a pasta como projeto Java
+3. Importe a pasta do repositório como projeto Java
 4. Coloque a DLL `E1_Impressora01.dll` em um local fixo do seu PC
 5. Altere a linha do código (linha ~35) para o caminho correto da sua DLL:
    ```java
@@ -42,7 +43,7 @@ O foco é ser **rápido de aprender**, mesmo para quem nunca programou na vida. 
 
 ```
 ************************************
-       * MENU DA IMPRESSORA *
+*        MENU DA IMPRESSORA        *
 ************************************
 1 - Configurar Conexão
 2 - Abrir Conexão
