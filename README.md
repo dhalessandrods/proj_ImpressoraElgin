@@ -25,7 +25,7 @@ O foco é ser **rápido de aprender**, mesmo para quem nunca programou na vida. 
 - **JNA** → `jna-5.15.0.jar` + `jna-platform-5.15.0.jar` (já incluídos no repositório ou baixe em https://github.com/java-native-access/jna)
 - **DLL da Elgin** → `E1_Impressora01.dll` (vem com o driver oficial da i9 – versão testada: 01.12.11)
 ****
-## 🚀 Como executar (passo a passo ridiculamente simples)
+## 🚀 Como executar o sistema (passo a passo ridiculamente simples)
 *Siga exatamente esses passos, um de cada vez. Não pule nada, mesmo que pareça bobo. Tudo foi testado várias vezes para ficar o mais fácil possível.*
 
 ### 1. Baixe o programa completo (é só clicar)
@@ -103,7 +103,7 @@ Pronto! Agora a impressora e o programa estão configurados!.
 1. Dentro do IntelliJ, com o arquivo Main.java selecionado, aperte as teclas de atalho ``ctrl + shift + F10``
 2. Esse comando vai executar o arquivo. Vai aparecer uma tela com o menu do sistema. Seja bem-vindo!
 
-## 📟 Menu principal (o que você vai ver na tela)****
+## 📟 Menu principal (o que você vai ver na tela)
 
 ```
 ************************************
