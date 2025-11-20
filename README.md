@@ -68,7 +68,20 @@ Clique no arquivo que termina com **.zip** (exemplo: `proj_ImpressoraElgin-main`
    String dados = "path=C:\\SEU_CAMINHO\\Downloads\\proj_ImpressoraElgin-main\\CANC_SAT.xml";
    ```
 
-8. Pronto! Você já editou o seu código e os devidos caminho para a MELHOR experiência usando o sistema!
+8. Agora é hora de configurar a BIBLIOTECA JNA para permitir que o código funcione bem:
+- Acesse as *Configurações (ou Settings)*, engrenagem no canto superior direito do IntelliJ
+- Procure por *Estrutura do projeto (ou Project Structure)*
+- Depois *Biblioteca (ou libraries)*
+- Clique em *+*, vá na pasta
+   ```java
+     >"C:\\SEU_CAMINHO\\Downloads\\proj_ImpressoraElgin-main\\libs"
+   ```
+  procure o arquivo `jna-5.15.0.jar`, clique em *de Java (ou from Java)*
+- depois em *Abrir (ou open)* e, finalmente, em *Aplicar (ou apply)*
+
+9. Pronto! Você já instalou o IntelliJ, corrigiu os diretórios e ainda instalou a biblioteca JNA.
+
+**Agora você pode aproveitar todos os recursos do sistema ao máximo!**
 
 > Dica de ouro: deixe os arquivos dentro da pasta do projeto e use caminho relativo:
 > ```java
