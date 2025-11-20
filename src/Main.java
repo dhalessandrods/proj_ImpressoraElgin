@@ -5,7 +5,7 @@ import java.util.Locale;
 
 public class Main {
     // Variáveis da Instância: ConexaoAberta, Tipo, Modelo, Conexão, Parâmetro
-    private static boolean conexaoAberta = true;
+    private static boolean conexaoAberta = false;
     private static int tipo;
     private static String modelo;
     private static String conexao;
@@ -22,7 +22,7 @@ public class Main {
     //Declaro e crio INTERFACE ImpressoraDLL
     public interface ImpressoraDLL extends Library {
         ImpressoraDLL INSTANCE = Native.load(
-                "C:\\workspace\\ws-intelliJ\\pj_ImpressoraElgin\\E1_Impressora01.dll",
+                "C:\\SEU_CAMINHO\\E1_Impressora01.dll",
                 ImpressoraDLL.class);
 
         // FUNÇÕES DA IMPRESSORA (na DLL)
@@ -147,24 +147,7 @@ public class Main {
         if(!conexaoAberta){
             System.out.println("Conexão está FECHADA. Execute [Abrir Conexão] primeiro.");
         }else{
-            String dados;
-            while (true){
-                System.out.println("Deseja editar o texto? (s/n)");
-                char escolha = sc.next().charAt(0);
-                sc.nextLine(); // Comando para LIMPAR o BUFFER
-                if (escolha == 's' || escolha =='S'){
-                    System.out.println("Digite o texto a seguir:");
-                    dados = sc.nextLine();
-                    break;
-                }else if (escolha == 'n' || escolha == 'N'){
-                    dados = "{A012345678912";    // Texto-PADRÃO.
-                    System.out.println("Texto-padrão a imprimir: "+dados);
-                    break;
-                }else{
-                    System.out.println("Opção errada. Tente novamente.");
-                }
-            }
-
+            String dados = "{A012345678912";    // Texto-PADRÃO.
             inicializaImpressora();
             int resultado = ImpressoraDLL.INSTANCE.ImpressaoCodigoBarras(8, dados, 100,2,3);
             // Parâmetros: Tipo do código de barras = 8 (Code128); Altura do código = 100;
@@ -184,7 +167,7 @@ public class Main {
         if(!conexaoAberta){
             System.out.println("Conexão está FECHADA. Execute [Abrir Conexão] primeiro.");
         }else{
-            String dados = "path=C:\\workspace\\ws-intelliJ\\proj_impressoraElgin\\XMLSAT.xml";
+            String dados = "path=C:\\SEU_CAMINHO\\XMLSAT.xml";
 
             int resultado = ImpressoraDLL.INSTANCE.ImprimeXMLSAT(dados, 0);
             // Parâmetros: param = 0 (imprime cupom no formato padrão);
@@ -204,7 +187,7 @@ public class Main {
         if(!conexaoAberta){
             System.out.println("Conexão está FECHADA. Execute [Abrir Conexão] primeiro.");
         }else{
-            String dados = "path=C:\\workspace\\ws-intelliJ\\proj_impressoraElgin\\CANC_SAT.xml";
+            String dados = "path=C:\\SEU_CAMINHO\\CANC_SAT.xml";
             String assQRCode = "Q5DLkpdRijIRGY6YSSNsTWK1TztHL1vD0V1Jc4spo/CEUqICEb9SFy82ym8EhBRZjbh3btsZhF+sjHqEMR159i4agru9x6KsepK/q0E2e5xlU5cv3m1woYfgHyOkWDNcSdMsS6bBh2Bpq6s89yJ9Q6qh/J8YHi306ce9Tqb/drKvN2XdE5noRSS32TAWuaQEVd7u+TrvXlOQsE3fHR1D5f1saUwQLPSdIv01NF6Ny7jZwjCwv1uNDgGZONJdlTJ6p0ccqnZvuE70aHOI09elpjEO6Cd+orI7XHHrFCwhFhAcbalc+ZfO5b/+vkyAHS6CYVFCDtYR9Hi5qgdk31v23w==";
             int resultado = ImpressoraDLL.INSTANCE.ImprimeXMLCancelamentoSAT(dados,assQRCode,0);
             // Parâmetros: dados = Caminho do arquivo.xml; assQRCode = assinatura da operação de venda; param = 0 (imprime cupom modo padrão)
@@ -256,8 +239,8 @@ public class Main {
         if(!conexaoAberta){
             System.out.println("Conexão está FECHADA. Execute [Abrir Conexão] primeiro.");
         }else{
-            int resultado = ImpressoraDLL.INSTANCE.SinalSonoro(4,50,5);
-            // Parâmetros: quantidade = 4; tempoInicio = 50; tempoFim = 5;
+            int resultado = ImpressoraDLL.INSTANCE.SinalSonoro(4,5,5);
+            // Parâmetros: quantidade = 4; tempoInicio = 5; tempoFim = 5;
             if (resultado == 0) {
                 System.out.println("SinalSonoro emitido com sucesso.");
             } else {
